@@ -216,7 +216,7 @@ nav {
     overflow: hidden;
 }
 
-#left .image img{
+#left .image img {
     /* margin-bottom: 20px; */
     width: 100%;
     height: 100%;
@@ -276,39 +276,60 @@ p {
     background-color: rgb(143, 143, 190);
 }
 
+.drop-down {
+    border-bottom: 1px solid #d8d4d430;
+    margin-bottom: 16px;
+}
+
 .flex {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: flex-start;
-    border-bottom: 1px solid #d8d4d47e;
-    padding-bottom: 8px;
+    padding-bottom: 20px;
 }
 
 .flex .checkbox {
     margin-right: 10px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .flex .checkbox input {
-    width: 17px;
-    height: 17px;
-
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
 }
 
 .name {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     color: var(--color-white2);
 }
 
 .name h4 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .name i {
-    padding-top: 4px;
+    padding-top: 6px;
     margin-left: 10px;
+    font-size: 14px;
 }
 
+.hidden-menu {
+    padding: 0px 15px 8px 15px;
+    /* display: none; */
+}
+
+.module-item {
+    border-bottom: 1px solid #d8d4d430;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+}
+
+.module-item p {
+    font-size: 14px;
+    font-weight: 400;
+
+}
