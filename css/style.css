@@ -1,3 +1,7 @@
+/* google fonts poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /* ----------------- css variable start ----------------- */
 /* use for text font */
 :root {
@@ -151,7 +155,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     height: auto;
     background-color: rgb(15, 15, 29);
-    padding: 25px 0px;
+    padding: 18px 0px;
 }
 
 nav {
@@ -160,17 +164,34 @@ nav {
     justify-content: space-between;
 }
 
-.logo h1,
-.nav-item h1 {
-    font-size: 24px;
-    font-weight: 500px;
+.logo img {
+    width: 70%;
+    height: auto;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-item img {
+    width: 8%;
+    height: auto;
+    margin-right: 8px;
+}
+
+.nav-item p {
+    font-size: 18px;
+    font-weight: 800px;
     font-family: var(--font-pippins);
     color: var(--color-white2);
+    letter-spacing: 1px;
 }
 
 #details-one {
     width: 100%;
-    min-height: calc(100vh - 78px);
+    min-height: calc(100vh - 76.69px);
     background-color: rgb(35, 35, 59);
 }
 
@@ -192,6 +213,16 @@ nav {
     background-color: #FFF;
     height: 520px;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+#left .image img{
+    /* margin-bottom: 20px; */
+    width: 100%;
+    height: 100%;
+    /* background-color: #FFF; */
+    /* height: 520px; */
+    /* border-radius: 10px; */
 }
 
 .module-title h1,
@@ -213,7 +244,6 @@ p {
     max-height: 520px;
     border-radius: 10px;
     overflow: hidden;
-    /* overflow-: hidden; */
     background-color: rgb(11, 11, 29);
 }
 
@@ -234,7 +264,7 @@ p {
     background-color: rgb(65, 65, 114);
 
     box-sizing: border-box;
-    border-radius:0px;
+    border-radius: 0px;
 }
 
 #right::-webkit-scrollbar-thumb {
@@ -242,6 +272,43 @@ p {
     border-radius: 0px;
 }
 
-#right::-webkit-scrollbar-thumb:hover {    
+#right::-webkit-scrollbar-thumb:hover {
     background-color: rgb(143, 143, 190);
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #d8d4d47e;
+    padding-bottom: 8px;
+}
+
+.flex .checkbox {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.flex .checkbox input {
+    width: 17px;
+    height: 17px;
+
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    color: var(--color-white2);
+}
+
+.name h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.name i {
+    padding-top: 4px;
+    margin-left: 10px;
+}
+
