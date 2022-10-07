@@ -191,8 +191,9 @@ nav {
 
 #details-one {
     width: 100%;
-    min-height: calc(100vh - 76.69px);
+    min-height: calc(100vh - 116.69px);
     background-color: rgb(35, 35, 59);
+    padding-bottom: 40px;
 }
 
 .details-main {
@@ -217,12 +218,9 @@ nav {
 }
 
 #left .image img {
-    /* margin-bottom: 20px; */
     width: 100%;
     height: 100%;
-    /* background-color: #FFF; */
-    /* height: 520px; */
-    /* border-radius: 10px; */
+    transition: opacity 0.8s linear;
 }
 
 .module-title h1,
@@ -239,11 +237,15 @@ p {
     font-weight: 400;
 }
 
+.milestone{
+    width: 100%;
+}
+
 #right-main {
     width: 100%;
     max-height: 520px;
     border-radius: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: rgb(11, 11, 29);
 }
 
@@ -256,24 +258,38 @@ p {
     padding: 20px;
 }
 
-#right::-webkit-scrollbar {
-    width: 12px;
+#right-main::-webkit-scrollbar {
+    width: 0px;
 }
 
-#right::-webkit-scrollbar-track {
+#right-main::-webkit-scrollbar-track {
     background-color: rgb(65, 65, 114);
-
     box-sizing: border-box;
     border-radius: 0px;
 }
 
-#right::-webkit-scrollbar-thumb {
+#right-main::-webkit-scrollbar-thumb {
     background-color: rgb(106, 106, 157);
     border-radius: 0px;
 }
 
-#right::-webkit-scrollbar-thumb:hover {
+#right-main::-webkit-scrollbar-thumb:hover {
     background-color: rgb(143, 143, 190);
+}
+
+#check-milestone{
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 29);
+    padding: 20px;
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#check-milestone::-webkit-scrollbar {
+    width: 0px;
 }
 
 .drop-down {
@@ -298,28 +314,41 @@ p {
     width: 16px;
     height: 16px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .name {
-    display: flex;
+    /* display: flex; */
     /* align-items: center; */
     color: var(--color-white2);
 }
 
-.name h4 {
-    font-weight: 500;
+.name label{
+    font-weight: 400;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.active label{
+    font-weight: 600;
 }
 
 .name i {
     padding-top: 6px;
-    margin-left: 10px;
+    margin-left: 6px;
     font-size: 14px;
 }
 
 .hidden-menu {
-    padding: 0px 15px 8px 15px;
-    /* display: none; */
+    padding: 0px 15px 0px 15px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.8s linear;
+    
+}
+
+.show {
+    max-height: 800px;
 }
 
 .module-item {
@@ -331,5 +360,4 @@ p {
 .module-item p {
     font-size: 14px;
     font-weight: 400;
-
 }
