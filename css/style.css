@@ -1,0 +1,247 @@
+/* ----------------- css variable start ----------------- */
+/* use for text font */
+:root {
+    --font-pippins: 'Poppins', sans-serif;
+    --font-awesome: fontAwesome;
+}
+
+/* use for container */
+:root {
+    --container-max-width: 1320px;
+}
+
+/* use for background-color & text-color */
+:root {
+
+    --color-gray: #afafaf;
+    --color-gray2: #d8d4d4;
+    --color-white: #ffff;
+    --color-white2: #e3e3e3;
+    --color-white3: #acacac;
+    --color-white4: #2d2d2d;
+    --color-white5: #3a3a3a;
+    --color-white7: #eceaea;
+    --color-white-submenu-hove: #656565;
+    --color-white6: rgba(255, 255, 255, 0.861);
+    --color-black-primary: #121212;
+    --color-black-primary-two: #414141;
+    --color-black-primary-three: #353535;
+    --search-icon-gray: #767676;
+    --color-black: #111111;
+    --color-redial-gray: #d1d1d1;
+}
+
+/* ----------------- css variable end ----------------- */
+
+
+/* ----------------- css global style start ----------------- */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-pippins);
+}
+
+body {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-family: var(--font-pippins);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #fff;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    display: block;
+    margin: 0px !important;
+}
+
+img {
+    display: block;
+    /* width: 100%; */
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    display: block;
+    max-width: var(--container-max-width);
+    width: 100%;
+    margin: auto;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+@media(max-width:1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media(max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+}
+
+/* 
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+
+    background: #555;
+} 
+*/
+/* ----------------- css global style end ----------------- */
+
+
+/* ----------------- css style start ----------------- */
+#nav {
+    width: 100%;
+    height: auto;
+    background-color: rgb(15, 15, 29);
+    padding: 25px 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1,
+.nav-item h1 {
+    font-size: 24px;
+    font-weight: 500px;
+    font-family: var(--font-pippins);
+    color: var(--color-white2);
+}
+
+#details-one {
+    width: 100%;
+    min-height: calc(100vh - 78px);
+    background-color: rgb(35, 35, 59);
+}
+
+.details-main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+#left {
+    width: 100%;
+    min-height: 100%;
+}
+
+#left .image {
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #FFF;
+    height: 520px;
+    border-radius: 10px;
+}
+
+.module-title h1,
+p {
+    color: var(--color-white2);
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.module-title p {
+    font-size: 18px;
+    margin-top: 12px !important;
+    font-weight: 400;
+}
+
+#right-main {
+    width: 100%;
+    max-height: 520px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* overflow-: hidden; */
+    background-color: rgb(11, 11, 29);
+}
+
+#right {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    overflow-x: hidden;
+    background-color: rgb(11, 11, 29);
+    padding: 20px;
+}
+
+#right::-webkit-scrollbar {
+    width: 12px;
+}
+
+#right::-webkit-scrollbar-track {
+    background-color: rgb(65, 65, 114);
+
+    box-sizing: border-box;
+    border-radius:0px;
+}
+
+#right::-webkit-scrollbar-thumb {
+    background-color: rgb(106, 106, 157);
+    border-radius: 0px;
+}
+
+#right::-webkit-scrollbar-thumb:hover {    
+    background-color: rgb(143, 143, 190);
+}
